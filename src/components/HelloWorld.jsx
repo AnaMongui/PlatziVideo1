@@ -3,7 +3,7 @@ import '../assets/styles/App.scss';
 
 const HelloWorld =() => (
 
-<h1>Hola Mundo</h1>
+<h1>Prueba</h1>
 
 );
 
