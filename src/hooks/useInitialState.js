@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import react,{ useState, useEffect } from 'react';
 
-const useInitialState = () => {
+const useInitialState = (API) => {
     const [ videos, setVideos ] = useState ({ mylist: [], trends:[], originals: [] })
     useEffect(() => {
       fetch(API)
