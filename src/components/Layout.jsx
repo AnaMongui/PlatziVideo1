@@ -4,7 +4,6 @@ import Footer from './Footer';
 
 const Layoud = ( { children} ) => (
     <div className="App">
-    <Header />
     {children}
     <Footer />
     </div>

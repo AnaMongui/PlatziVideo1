@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { loginRequest } from '../actions';
+import Header from '../components/Header';
 import '../assets/styles/components/Login.scss';
 import googleIcon from '../assets/icons/google-icon.png';
 import twittericon from '../assets/icons/twitter-icon.png';
@@ -25,6 +26,8 @@ const handleSubmit = event => {
 }
 
   return (
+    <>
+    <Header isLogin />
     <section className="login" >
     <section className="login__container" >
       <h2>Inicia sesión</h2>
@@ -56,14 +59,14 @@ const handleSubmit = event => {
         <div><img src={twittericon} /> Inicia sesión con Twitter</div>
       </section>
       <p className="login__container--register">
-        No tienes ninguna cuenta 
+        No tienes ninguna cuenta {' '}
         <Link to="/register">
         Regístrate
         </Link>
         </p>
     </section>
   </section>
-
+  </>
 );
 
 }
